@@ -83,8 +83,8 @@ iframe {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 1em;
-	margin-top: 1em;
+	margin-bottom: 0em;
+	margin-top: 0em;
 }
 
 .responsive-iframe {
@@ -2434,6 +2434,28 @@ iframe {
 					margin-left: auto;
 					margin-right: auto;
 					width: 80%;
+				}	
+
+			}
+
+			.image.vertical {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 60%;
+		}
+	
+			.image.vertical img {
+				
+				width: 60%;
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				.image.vertical {
+					margin-left: auto;
+					margin-right: auto;
+					width: 60%;
 				}	
 
 			}
