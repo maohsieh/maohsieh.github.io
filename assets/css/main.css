@@ -2436,6 +2436,7 @@ iframe {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				margin-bottom: 3em;
 				width: 80%;
 		}
 	
@@ -2450,6 +2451,7 @@ iframe {
 					
 					margin-left: auto;
 					margin-right: auto;
+					margin-bottom: 3em;
 					width: 80%;
 				}	
 
