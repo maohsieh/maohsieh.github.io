@@ -19,6 +19,7 @@ function filterProjects(category) {
         activeButton.classList.add('active-filter');
     }
 }
+//
 
 function scrollToProjects() {
     document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
