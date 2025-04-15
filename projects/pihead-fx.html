@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pihead-fx~ | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+        function toggleReadMore() {
+            const moreText = document.getElementById("more-text");
+            const readMoreBtn = document.getElementById("read-more-btn");
+
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+                readMoreBtn.innerText = "Read less -";
+            } else {
+                moreText.style.display = "none";
+                readMoreBtn.innerText = "Read more +";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" class="back-button">◀</a>
+        <h2 class="name">MAO-SHIN HSIEH</h2>
+    </header>
+
+    <!-- Project Title + Description -->
+    <section class="project-intro">
+        <div class="title-container">
+            <h1 class="project-title">pihead-fx~</h1>
+        </div>
+        <div class="description-container">
+            <p class="project-description">
+                pihead-fx~ is a multi-effect guitar signal processor built on a Raspberry Pi,
+                leveraging Pure Data (Pd) DSP for real-time audio processing. This project integrates DSP programming,
+                UI/UX design, hardware prototyping, and 3D modeling into a cohesive, fully functional amp/effects
+                modeler.
+            </p>
+            <p id="more-text" class="project-description" style="display: none;">
+                Developed as my senior project at UC San Diego under the guidance of Professor Tom Erbe,
+                pihead-fx~ was conceptualized and designed in early 2019 and completed in June of the same year.
+                The goal was to create a modular, software-driven effects unit that retains the hands-on interaction
+                of traditional guitar pedals while offering the flexibility of digital signal processing.
+            </p>
+            <p id="read-more-btn" class="read-more" onclick="toggleReadMore()">Read more +</p>
+        </div>
+    </section>
+
+    <!-- Horizontal Line -->
+    <hr class="section-divider">
+
+    <!-- Project Details Section (Now in Full-Width Grid) -->
+    <section class="project-details-grid">
+        <div class="detail-item">
+            <p class="detail-label">Role</p>
+            <p class="detail-content">Lead Designer & Developer</p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Date</p>
+            <p class="detail-content">2019/01 - 2019/06</p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Skills</p>
+            <p class="detail-content">
+                DSP<br>
+                Circuit Design<br>
+                GPIO/Hardware Interfacing<br>
+                Software UI & UX Design<br>
+                Product Prototyping<br>
+                3D Modeling & Printing<br>
+                Project Management<br>
+            </p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Technologies</p>
+            <p class="detail-content">
+                Pure Data<br>
+                Raspberry Pi<br>
+                Python<br>
+                Autodesk Fusion<br>
+                Cura<br>
+            </p>
+        </div>
+    </section>
+
+    <!-- Horizontal Line -->
+    <hr class="section-divider">
+
+
+
+    <!-- Large Project Image -->
+    <section class="project-cover">
+        <img src="../images/pihead-fx_cover.jpg" alt="Project Cover">
+    </section>
+
+
+    <section class="story-grid">
+        <!-- Split Section: 3D Modeling & Circuit Design -->
+        <div class="grid-item split">
+            <img src="../images/pihead-fx_pi.jpg" alt="Raspberry Pi Integration">
+
+            <img src="../images/pihead-fx_circuit.jpg" alt="Circuit Design">
+        </div>
+
+        <!-- Full-width Raspberry Pi Section -->
+        <div class="grid-item full">
+            <img src="../images/pihead-fx_faces.jpg" alt="Front Panel Designs">
+        </div>
+
+
+        <!-- Split Section: Front Panel & Python Code -->
+        <div class="grid-item split">
+
+
+            <img src="../images/pihead-fx_python.jpg" alt="Python Code for DSP">
+        </div>
+
+        <!-- Full-width Prototyping & 3D Printing -->
+        <div class="grid-item full">
+
+        </div>
+
+        <!-- Split Section: Additional Print Stages -->
+        <div class="grid-item split">
+            <img src="../images/pihead-fx_3D.jpg" alt="3D Model">
+            <img src="../images/pihead-fx_print1.jpg" alt="3D Printing Process">
+            <img src="../images/pihead-fx_print2.jpg" alt="3D Print Stage 2">
+            <img src="../images/pihead-fx_print3.jpg" alt="3D Print Stage 3">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mao-shin-h-90546313b/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:your.email@example.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2025 Mao-Shin Hsieh</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAO-SHIN HSIEH</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h2 class="name">Mao-Shin Hsieh</h2>
+        <nav>
+            <button class="menu-button">☰</button>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="images/me.jpg" alt="Your Name" class="profile-pic">
+        <div class="intro-content">
+            <h1 class="tight-spacing">Hello! 👋 I'm 謝貿馨</h1>
+            <h2 class="tight-spacing">(you can also call me Mao)</h2>
+            <!-- Dynamic typing text -->
+            <h3 class="typing-text"><span id="typed-text"></span><span class="cursor">|</span></h3>
+            <!-- invisible placedholder to keep width -->
+            <h3 class="typing-text" style="margin-top: -50px;">
+                <span style="visibility: hidden;">I code creative solutions, and I make music |</span>
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </h3>
+            
+            
+            
+            
+            <h3 class="self-title">Audio Engineer and Product Designer</h3>
+            <ul>
+                <li>Customer Support Specialist @ Positive Grid</li>
+                <li>B.A. Music Technology '22 @ UC San Diego</li>
+            </ul>
+            <p></p>
+            <div class="buttons">
+                <button class="resume">RESUME</button>
+                <button class="contact">CONTACT ME</button>
+                <button class="my-works" onclick="scrollToProjects()">MY WORK ▼</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr>
+
+    <section class="portfolio">
+        <div class="filter-options">
+            <button data-category="All" onclick="filterProjects('All')">All</button>
+            <button data-category="Mobile" onclick="filterProjects('Mobile')">UI/UX</button>
+            <button data-category="Web" onclick="filterProjects('Web')">Web</button>
+            <button data-category="Extension" onclick="filterProjects('Extension')">Tools</button>
+            <button data-category="Audio" onclick="filterProjects('Audio')">Audio</button>
+        </div>
+        
+        <div class="portfolio-container" id="portfolio">
+            <div class="tile" data-category="Mobile">
+                <img src="images/s_musicol_cover1.jpg" alt="MusiCol">
+                <p>MusiCol</p>
+            </div>
+            <div class="tile" data-category="Mobile">
+                <img src="images/s_linebaito_cover.jpg" alt="LINE Baito">
+                <p>LINE Baito</p>
+            </div>
+            <div class="tile" data-category="Mobile">
+                <img src="images/s_ask2see_cover.jpg" alt="Ask²See">
+                <p>Ask²See</p>
+            </div>
+            <div class="tile" data-category="Audio">
+                <img src="images/s_placeholder.jpg" alt="shadyComp">
+                <p>shadyComp</p>
+            </div>
+            <div class="tile" data-category="Audio">
+                <img src="images/s_pihead_cover.jpg" alt="pihead-fx~">
+                <p>pihead-fx~</p>
+            </div>
+            <!-- Extensions -->
+            <div class="tile" data-category="Extension">
+                <img src="images/s_placeholder.jpg" alt="LabelParrot">
+                <p>LabelParrot</p>
+            </div>
+
+            <div class="tile" data-category="Extension">
+                <img src="images/s_placeholder.jpg" alt="ZenParrot">
+                <p>ZenParrot</p>
+            </div>
+
+            <div class="tile" data-category="Extension">
+                <img src="images/s_placeholder.jpg" alt="Refund Calculator">
+                <p>Refund Calculator</p>
+            </div>
+
+            <!-- Web -->
+            <div class="tile" data-category="Web">
+                <img src="images/s_sparkit_cover.jpg" alt="Spark-it!">
+                <p>Spark-it!</p>
+            </div>
+
+            <div class="tile" data-category="Web">
+                <img src="images/s_placeholder.jpg" alt="CouponRetriever">
+                <p>CouponRetriever</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mao-shin-h-90546313b/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:your.email@example.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2025 Mao-Shin Hsieh</p>
+        </div>
+    </footer>
+
+    <script src="p5-background.js"></script>
+
+</body>
+
+
+</html>
