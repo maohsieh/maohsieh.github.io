@@ -415,10 +415,12 @@ hr {
 
 footer {
     padding: 20px 40px;
+    margin-top: 60px; /* 👈 Add this line */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
+  
 
 .footer-content {
     width: 100%;
@@ -587,6 +589,25 @@ footer {
     overflow: hidden;
 }
 
+
+/* 📸 Image Captions and Layout Fix */
+.story-grid figure {
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-grid figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    text-align: center;
+    max-width: 90%;
+}
+
+
 /* Image Styles: Ensuring No Cropping */
 .grid-item img {
     width: 100%;
@@ -707,6 +728,21 @@ footer {
     color: white;
 }
 
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    text-align: center;
+    max-width: 90%;
+}
 
 
 

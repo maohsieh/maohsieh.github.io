@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title | Portfolio</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Optional JS for Read More -->
+  <script>
+    function toggleReadMore() {
+      const moreText = document.getElementById("more-text");
+      const readMoreBtn = document.getElementById("read-more-btn");
+
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "block";
+        readMoreBtn.innerText = "Read less -";
+      } else {
+        moreText.style.display = "none";
+        readMoreBtn.innerText = "Read more +";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- 🔙 Back Button + Header -->
+  <header>
+    <a href="../index.html" class="back-button">◀</a>
+    <h2 class="name">MAO-SHIN HSIEH</h2>
+  </header>
+
+  <!-- 🧠 Project Metadata: Title + Description -->
+  <section class="project-intro">
+    <div class="title-container">
+      <h1 class="project-title">Project Title</h1>
+    </div>
+    <div class="description-container">
+      <p class="project-description">
+        Short project description here.
+      </p>
+      <p id="more-text" class="project-description" style="display: none;">
+        Additional details shown on "Read more".
+      </p>
+      <p id="read-more-btn" class="read-more" onclick="toggleReadMore()">Read more +</p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr class="section-divider" />
+
+  <!-- 🔧 Project Metadata: Role / Tech / Skills -->
+  <section class="project-details-grid">
+    <div class="detail-item">
+      <p class="detail-label">Role</p>
+      <p class="detail-content">Your Role</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Date</p>
+      <p class="detail-content">Start – End</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Skills</p>
+      <p class="detail-content">Skill 1<br>Skill 2</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Technologies</p>
+      <p class="detail-content">Tech 1<br>Tech 2</p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr class="section-divider" />
+
+  <!-- 🖼️ Cover Image -->
+  <section class="project-cover">
+    <img src="../images/linebaito_cover.jpg" alt="Project Cover" />
+    
+    
+  </section>
+
+  <!-- 📸 Media Grid / Story Grid -->
+  <section class="story-grid">
+
+    <!-- 👇 Split Section Example -->
+    <div class="grid-item split">
+      <figure>
+        <img src="../images/s_placeholder.jpg" alt="Alt text" />
+        <figcaption>Caption describing this image</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/s_placeholder.jpg" alt="Alt text" />
+        <figcaption>Another caption</figcaption>
+      </figure>
+    </div>
+
+    <!-- 👇 Full-width Image Example -->
+    <div class="grid-item full">
+      <figure>
+        <img src="../images/s_placeholder.jpg" alt="Alt text" />
+        <figcaption>Caption for full-width image</figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+  <!-- Optional Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mao-shin-h-90546313b/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:your.email@example.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p class="footer-text">&copy; 2025 Mao-Shin Hsieh</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LINE Baito | Portfolio</title>
+
+    <!-- Fonts and Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Read More Toggle -->
+    <script>
+        function toggleReadMore() {
+            const moreText = document.getElementById("more-text");
+            const readMoreBtn = document.getElementById("read-more-btn");
+
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+                readMoreBtn.innerText = "Read less -";
+            } else {
+                moreText.style.display = "none";
+                readMoreBtn.innerText = "Read more +";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- 🔙 Back Button + Header -->
+    <header>
+        <a href="../index.html" class="back-button">◀</a>
+        <h2 class="name">MAO-SHIN HSIEH</h2>
+    </header>
+
+    <!-- 🧠 Project Metadata: Title + Description -->
+    <section class="project-intro">
+        <div class="title-container">
+            <h1 class="project-title">LINE Baito</h1>
+        </div>
+        <div class="description-container">
+            <p class="project-description">
+                In spring 2020, I participated in LINE Corporation’s competitive UI Design Internship Course, where I
+                independently redesigned the user interface of LINE Baito, the company’s part-time job search and
+                recruitment service app targeted at students and young workers in Japan.
+            </p>
+            <p id="more-text" class="project-description" style="display: none;">
+                I redesigned the UI for LINE Baito with a focus on usability, visual hierarchy, and mobile-first user
+                flow. The redesign covered key features like the job feed, filtering, and application process, aligning
+                with LINE’s design system to reduce cognitive load and improve accessibility.<br><br>
+
+                Using Adobe XD, I built a static prototype incorporating real-world use cases, such as job search
+                by location and LINE-based applications. I presented the final design to LINE’s product team and
+                recruiters, receiving feedback on user flow and integration ideas like LINE Pay and chat-based tracking.
+                <br><br>
+                This project strengthened my skills in prototyping, stakeholder communication, and applying UX
+                principles in a real-world, Japanese tech setting.
+            </p>
+            <p id="read-more-btn" class="read-more" onclick="toggleReadMore()">Read more +</p>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <hr class="section-divider" />
+
+    <!-- 🔧 Project Metadata: Role / Tech / Skills -->
+    <section class="project-details-grid">
+        <div class="detail-item">
+            <p class="detail-label">Role</p>
+            <p class="detail-content">UI Designer</p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Date</p>
+            <p class="detail-content">2020/07</p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Skills</p>
+            <p class="detail-content">UI/UX Design<br>Prototyping<br>Design Presentation</p>
+        </div>
+        <div class="detail-item">
+            <p class="detail-label">Technologies</p>
+            <p class="detail-content">Adobe XD<br>LINE Style Guide</p>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <hr class="section-divider" />
+
+    <!-- 🖼️ Cover Image -->
+    <section class="project-cover">
+        <img src="../images/linebaito_cover.jpg" alt="LINE Baito Project Cover" />
+    </section>
+
+<br>
+    <section class="story-grid">
+
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide2.jpeg" alt="Slide 2">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide3.jpeg" alt="Slide 3">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide4.jpeg" alt="Slide 4">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide5.jpeg" alt="Slide 5">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide6.jpeg" alt="Slide 6">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide7.jpeg" alt="Slide 7">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide8.jpeg" alt="Slide 8">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide9.jpeg" alt="Slide 9">
+          </figure>
+        </div>
+      
+        <div class="grid-item full">
+          <figure>
+            <img src="../images/linebaito_slide10.jpeg" alt="Slide 10">
+          </figure>
+        </div>
+      
+      </section>
+      
+
+
+    <!-- Optional Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mao-shin-h-90546313b/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:your.email@example.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2025 Mao-Shin Hsieh</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

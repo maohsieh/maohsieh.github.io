@@ -27,7 +27,8 @@ function scrollToProjects() {
 // Navigate to project pages when clicking tiles
 document.addEventListener('DOMContentLoaded', () => {
     let projectLinks = {
-        'pihead-fx~': '/projects/pihead-fx.html'
+        'pihead-fx~': '/projects/pihead-fx.html',
+        'LINE Baito': '/projects/linebaito.html'
     };
     
     document.querySelectorAll('.tile').forEach(tile => {
