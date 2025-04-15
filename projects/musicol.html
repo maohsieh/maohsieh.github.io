@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusiCol | Portfolio</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- 🔙 Back Button + Header -->
+  <header>
+    <a href="../index.html" class="back-button">◀</a>
+    <h2 class="name">MAO-SHIN HSIEH</h2>
+  </header>
+
+  <!-- 🧠 Project Metadata: Title + Description -->
+  <section class="project-intro">
+    <div class="title-container">
+      <h1 class="project-title">MusiCol</h1>
+    </div>
+    <div class="description-container">
+      <p class="project-description">
+        MusiCol is a startup project for a mobile app dedicated to connecting musicians and enhancing their experience
+        in collaborating online.
+      </p>
+      <p id="more-text" class="project-description" style="display: none;">
+        Developed during UCSD’s "Successful Entrepreneurship for Engineers" course, I co-managed a team of five, set project goals,
+        organized team meetings, and co-authored a business proposal.
+        <br><br>
+        The idea emerged from the challenges musicians
+        faced during the COVID-19 pandemic—isolated, unable to perform or record together. I proposed MusiCol: a social
+        platform enabling musicians to collaborate asynchronously from their homes, combining my passions for music and
+        design.
+        <br><br>
+        As the lead UI/UX designer, I created a fully interactive prototype using Figma, focusing on musical profiles,
+        asynchronous demo recording, and a matchmaking system.
+        <br><br>
+        This project introduced me to entrepreneurship from ideation through pitch delivery, helping me build skills in
+        design, business strategy, and remote teamwork.
+      </p>
+      <p id="read-more-btn" class="read-more" onclick="toggleReadMore()">Read more +</p>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- 🔧 Project Metadata: Role / Tech / Skills -->
+  <section class="project-details-grid">
+    <div class="detail-item">
+      <p class="detail-label">Role</p>
+      <p class="detail-content">Lead UI/UX Designer<br>Co-founder</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Date</p>
+      <p class="detail-content">2020 Summer</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Skills</p>
+      <p class="detail-content">UI/UX Design<br>Prototyping<br>Entrepreneurship<br>Project Management<br>Pitching<br>Mobile Design</p>
+    </div>
+    <div class="detail-item">
+      <p class="detail-label">Technologies</p>
+      <p class="detail-content">Figma</p>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- 🖼️ Cover Image -->
+  <section class="project-cover">
+    <img src="../images/musicol_cover.jpg" alt="MusiCol Cover">
+  </section>
+  <br>
+  <!-- 📸 Media Grid / Story Grid -->
+  <section class="story-grid">
+    <div class="grid-item full iframe-wrapper">
+      <iframe src="https://www.youtube.com/embed/gZ6mddqJ-1U" allowfullscreen></iframe>
+    </div>
+    <div class="grid-item full iframe-wrapper">
+      <iframe src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/3JfCy8Lr407AJzRB552YhZ/MusiCol?node-id=117%3A572&starting-point-node-id=117%3A572
+      " allowfullscreen></iframe>
+    </div>
+    <!-- <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_1.jpg" alt="Slide 1"></figure>
+    </div> -->
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_2.jpg" alt="Slide 2"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_3.jpg" alt="Slide 3"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_4.jpg" alt="Slide 4"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_5.jpg" alt="Slide 5"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_6.jpg" alt="Slide 6"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_7.jpg" alt="Slide 7"></figure>
+    </div>
+    <div class="grid-item full">
+      <figure><img src="../images/musicol_slide_8.jpg" alt="Slide 8"></figure>
+    </div>
+  </section>
+
+  <section class="story-grid">
+    <!-- Figma Embed -->
+
+
+    <!-- YouTube Embed -->
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://twitter.com/shadyberns" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/shadyberns" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/c/shadyberns" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:mahsieh@ucsd.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2025 Mao-Shin Hsieh</p>
+    </div>
+  </footer>
+
+  <!-- Read More Toggle Script -->
+  <script>
+    function toggleReadMore() {
+      const moreText = document.getElementById("more-text");
+      const readMoreBtn = document.getElementById("read-more-btn");
+
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "block";
+        readMoreBtn.innerText = "Read less -";
+      } else {
+        moreText.style.display = "none";
+        readMoreBtn.innerText = "Read more +";
+      }
+    }
+  </script>
+</body>
+
+</html>

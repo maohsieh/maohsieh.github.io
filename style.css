@@ -693,11 +693,22 @@ footer {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
+  
+
+  /* Embed Styling within story-grid */
+.grid-item.full.iframe-wrapper {
+    padding: 0; /* no vertical padding like images */
+    margin: 20px 0;
+  }
+  
+  .grid-item.full.iframe-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
+    display: block;
+  }
+  
 
 .responsive-iframe {
     width: 100%;

@@ -28,7 +28,8 @@ function scrollToProjects() {
 document.addEventListener('DOMContentLoaded', () => {
     let projectLinks = {
         'pihead-fx~': '/projects/pihead-fx.html',
-        'LINE Baito': '/projects/linebaito.html'
+        'LINE Baito': '/projects/linebaito.html',
+        'MusiCol': '/projects/musicol.html'
     };
     
     document.querySelectorAll('.tile').forEach(tile => {
