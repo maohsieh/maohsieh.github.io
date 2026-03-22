@@ -165,8 +165,12 @@ header {
 
 /* Specific icons for different list items */
 .intro-content ul li:nth-child(1)::before { content: "\f0b1"; } /* Briefcase */
-.intro-content ul li:nth-child(2)::before { content: "\f19d"; } /* Building */
-.intro-content ul li:nth-child(3)::before { content: "\f19d"; } /* Graduation Cap */
+.intro-content ul li:nth-child(2)::before { content: "\f19d"; } /* Graduation Cap */
+
+.li-sub {
+    font-size: 14px;
+    color: #888;
+}
 
 /* ========================== */
 /* 🔹 Buttons 🔹 */
@@ -795,7 +799,7 @@ figcaption {
     }
 
     .intro-content ul li {
-        white-space: nowrap; /* Ensure list items don’t break into new lines */
+        white-space: normal;
     }
 
     .buttons button {
@@ -843,16 +847,16 @@ figcaption {
     }
 
     .intro-content ul li {
-        padding-left: 0; /* Reset padding */
-        display: flex;
         font-size: 14px;
-        align-items: center;
-        justify-content: center;
+        white-space: normal;
+        padding-left: 0;
+        display: block;
     }
 
     .intro-content ul li::before {
         position: relative;
-        margin-right: 8px; /* Space between icon and text */
+        left: auto;
+        margin-right: 8px;
     }
 
     .buttons {
@@ -928,12 +932,12 @@ figcaption {
 
     .intro-content ul {
         font-size: 12px;
-        text-align: left;
+        text-align: center;
     }
 
     .intro-content ul li {
         font-size: 12px;
-        white-space: nowrap; /* Ensure list items don't wrap */
+        white-space: normal;
     }
 
     .buttons button {
