@@ -197,7 +197,6 @@ button {
 button:hover {
     background: black;
     color: white;
-    transform: scale(1.05);
 }
 
 /* Unique styling for "My Works" button */
